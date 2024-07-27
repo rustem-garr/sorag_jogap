@@ -22,7 +22,7 @@ class SoragJogap:
         self.indiki_sorag()  # Показываем новый вопрос
 
     def soraglary_yukle(self):
-        with open('soraglar.txt', 'r') as file:  # Открываем файл с вопросами
+        with open('soraglar.txt', 'r', encoding='utf-8') as file:  # Открываем файл с вопросами
             setirler = file.readlines()  # Читаем все строки из файла
 
         sorag = ""  # Инициализируем переменную для хранения текста вопроса
